@@ -3,6 +3,7 @@
 ## 一、 实现逻辑
 
 扩容原理：使用 parted 修改分区表，删除旧分区（Server, Data, Cache 等），按新大小重建分区。
+
 救砖实现参考：[https://www.youtube.com/watch?app=desktop&amp;v=3pP4nYaj2aY&amp;themeRefresh=1]()
 
 用sp-flash-tool刷preloader，用mtkclient刷需要刷入的bin
