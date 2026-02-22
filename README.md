@@ -11,9 +11,11 @@
 ## 二、 准备工作
 
 环境：电脑已配置 ADB/Fastboot 驱动，手机能进入 TWRP 或 Fastboot。
+
 工具：
 adb工具包
 parted 二进制文件（用于手机端分区）。
+
 文件：
 system.img (原厂或 GSI 系统镜像)。
 vbmeta.img (必须去验证，否则不开机)。
@@ -59,7 +61,8 @@ adb shell /tmp/parted /dev/block/mmcblk0 # 运行工具
 
 3. 重启到 Fastboot
    **退出 parted 后，立刻重启到 Bootloader，不要重启系统！！！！！**
-   **本机只能通过twrp进fastboot，如果重新启动，进不了twrp也就无法进fastboot了**
+
+    **本机只能通过twrp进fastboot，如果重新启动，进不了twrp也就无法进fastboot了**
 
 ```
 adb reboot bootloader
